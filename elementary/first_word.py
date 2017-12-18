@@ -19,4 +19,4 @@ def first_word(str):
 
 
 if __name__ == '__main__':
-    print first_word(s)
+    print(first_word(s))

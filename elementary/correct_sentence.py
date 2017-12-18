@@ -10,4 +10,4 @@ def correct_sentence(str):
 
 
 if __name__ == '__main__':
-    print correct_sentence('greetings, friends')
+    print(correct_sentence('greetings, friends'))
