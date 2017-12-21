@@ -12,5 +12,13 @@ Input: Two strings.
 Output: Int or None
 """
 
+def second_index(str, word):
+    index, count = 0, 0
+    for i in str:
+        if i == word and count <> 0:
+            return index
+        count += 1
+    return None
+
 if __name__ == '__main__':
-    pass
+    print(second_index("sims", "s"))
