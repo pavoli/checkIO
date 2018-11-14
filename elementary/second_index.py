@@ -15,10 +15,14 @@ Output: Int or None
 def second_index(str, word):
     index, count = 0, 0
     for i in str:
-        if i == word and count <> 0:
+        if i == word:
+            count += 1
+        if  count == 2:
             return index
-        count += 1
+        index += 1
     return None
 
 if __name__ == '__main__':
-    print(second_index("sims", "s"))
+    #print(second_index("sims", "s"))
+    #print(second_index("find the river", "e"))
+    print(second_index("hi", " "))
