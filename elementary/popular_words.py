@@ -3,9 +3,16 @@
 __author__ = 'p.olifer'
 
 def popular_words(text: str, words: list) -> dict:
-    for i in text.split(' '):
-        print(i)
+    d = {a.lower():0 for a in words}
+    new_text = [i.strip('\n').lower() for i in text.split(' ') if i]
 
+    for k, v in d.items():
+        for i in new_text:
+            if k == i:
+                d[k] =+ 1
+
+    for i in d:
+        print(d)
 
 if __name__ == '__main__':
     popular_words('''
