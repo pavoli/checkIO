@@ -27,9 +27,11 @@ def fight(unit1, unit2):
         unit1.health -= unit2.attack
     return True if unit1.health > 0 else False
 
-if __name__ == '__name__':
+if __name__ == '__main__':
     chuck = Warrior()
     bruce = Warrior()
     carl = Knight()
     dave = Warrior()
+    mark = Warrior()
 
+    print(fight(chuck, bruce))
