@@ -14,7 +14,7 @@ def two_teams(dict):
             second_team.append(i)
     print(sorted(first_team))
     print(sorted(second_team))
-    return [first_team.sort(), second_team.sort()]
+    return [sorted(first_team), sorted(second_team)]
 
 
 if __name__ == '__main__':
